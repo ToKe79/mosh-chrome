@@ -1,0 +1,3 @@
+[submodule "powerline-web-fonts"]
+	path = powerline-web-fonts
+	url = https://github.com/wernight/powerline-web-fonts
