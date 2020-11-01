@@ -8,7 +8,7 @@ if [ $ret -eq 0 ] ; then
   mosharch="${origcwd}/bazel-genfiles/mosh_chrome_dev.zip"
   if [ -r "${mosharch}" ] ; then
     tmpfolder="/tmp/`date +%Y%m%d%H%M%S`"
-    webroot="/var/www/vps.vudiq.sk"
+    webroot="/var/www/www.vudiq.sk"
     mkdir -p $tmpfolder
     cd $tmpfolder
     unzip $mosharch > /dev/null
@@ -21,7 +21,7 @@ if [ $ret -eq 0 ] ; then
     cd "${origcwd}"
     rm -rf $tmpfolder
     echo "Mosh for Chrome enhanced with Powerline Fonts."
-    echo "Download the ZIP from vps.vudiq.sk/mosh_vudiq.zip"
+    echo "Download the ZIP from www.vudiq.sk/mosh_vudiq.zip"
     exit 0
   else
     echo "Sorry, file '${mosharch}' not found!" >&2
